@@ -29,7 +29,7 @@ if (!inputFolder) {
       .sort();
 
     const htmlContent = images.map(img =>
-    `<img src="${path.join(chapterDir, img)}" style="width:100%; display: block; margin-bottom: 1em;"/>`
+    `<img src="${path.join(chapterDir, img)}" style="max-width:100%; max-height:100vh; width:auto; height:auto; display:block; margin:auto;" />`
     ).join('');
       
     chapters.push({
